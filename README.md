@@ -3,7 +3,7 @@
 ```
 # PHP7 for Locaweb
 AddHandler php71-script .php
-suPHP_ConfigPath /home/{your-domain}/
+suPHP_ConfigPath /home/{your-ftp-username}/
 
 # Redirection rule from one domain to another
 <IfModule mod_rewrite.c>
