@@ -1,5 +1,6 @@
 # Laravel htaccess
 
+```
 # PHP7 for Locaweb
 AddHandler php71-script .php
 suPHP_ConfigPath /home/{your-domain}/
@@ -24,3 +25,4 @@ suPHP_ConfigPath /home/{your-domain}/
     RewriteRule ^$ public/ [L]
     RewriteRule (.*) public/$1 [L]
 </IfModule>
+```
