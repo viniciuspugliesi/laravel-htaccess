@@ -8,8 +8,9 @@ suPHP_ConfigPath /home/{your-ftp-username}/
 # Redirection rule from one domain to another
 <IfModule mod_rewrite.c>
     RewriteEngine on
-    RewriteCond %http://example.net/$ [OR]
-    RewriteRule ^(.*)$ http://example.com [R=301,L]
+    RewriteCond %{HTTP_HOST} ^example.net.br$ [OR]
+    RewriteCond %{HTTP_HOST} ^www.example.net.br$
+    RewriteRule ^(.*)$ http://example.com.br [R=301,L]
 </IfModule>
 
 # Redirection rule for https domain
